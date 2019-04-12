@@ -302,9 +302,9 @@ def main():
                 device=device,
                 log_interval=100)
 
-    # greedy_agent = Greedy(24, 100, 1).to(device)
-    # one_greedy_agent = Greedy(24, 100, 1, 0.01).to(device)
-    # five_greedy_agent = Greedy(24, 100, 1, 0.05).to(device)
+    greedy_agent = Greedy(24, 100, 1).to(device)
+    one_greedy_agent = Greedy(24, 100, 1, 0.01).to(device)
+    five_greedy_agent = Greedy(24, 100, 1, 0.05).to(device)
 
     outf = open('out.csv', 'w')
     greedy_regrets = run_experiment(greedy_agent, mushrooms,
