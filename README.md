@@ -12,8 +12,8 @@ We were curious about whether we could reproduce that empirical evidence. Accord
     * [`mnist_gridsearch.py`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/mnist_gridsearch.py) and [`mnist_gridsearch_full.py`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/mnist_gridsearch_full.py) contain the hyperparameter searches we ran and would have run (given more compute) for that experiment, respectively.
   * Experiment 2: [`regression.py`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/regression.py)
   * Experiment 3: [`bandits.py`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/bandits.py)
-* A report detailing our findings about whether the paper was reproducible.
-* A poster summarising that report.
+* A [report](https://github.com/samsarana/bayes-by-backprop/blob/master/report.pdf) detailing our findings about whether the paper was reproducible.
+* A [poster](https://github.com/samsarana/bayes-by-backprop/blob/master/poster.pdf) summarising that report.
 
 Additionally, we reran experiment 2 using [*MC-Dropout*](https://arxiv.org/pdf/1506.02142.pdf) instead of Bayes by Backprop, and compared the results. We also did a preliminary investigation into using *Bayes by Backprop* in the active learning framework (see [`active_learning_exploration.ipynb`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/active_learning_exploration.ipynb))
 
