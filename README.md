@@ -8,14 +8,16 @@ The key contribution of the paper is the *Bayes by Backprop* algorithm, which th
 
 We were curious about whether we could reproduce that empirical evidence. Accordingly, this repo contains:
 * Code for running the three experiments described in the paper:
-  * Experiment 1: `mnist_test.py`
-    * `mnist_gridsearch.py` and `mnist_gridsearch_full.py` contain the hyperparameter searches we ran for that experiment.
-  * Experiment 2: `regression.py`
-  * Experiment 3: `bandits.py`
+  * Experiment 1: [`mnist_test.py`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/mnist_test.py)
+    * [`mnist_gridsearch.py`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/mnist_gridsearch.py) and [`mnist_gridsearch_full.py`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/mnist_gridsearch_full.py) contain the hyperparameter searches we ran and would have run (given more compute) for that experiment, respectively.
+  * Experiment 2: [`regression.py`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/regression.py)
+  * Experiment 3: [`bandits.py`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/bandits.py)
 * A report detailing our findings about whether the paper was reproducible.
 * A poster summarising that report.
 
-Additionally, we reran experiment 2 using [*MC-Dropout*](https://arxiv.org/pdf/1506.02142.pdf) instead of Bayes by Backprop, and compared the results. We also did a preliminary investigation into using *Bayes by Backprop* in the active learning framework (see `active_learning_exploration.ipynb`)
+Additionally, we reran experiment 2 using [*MC-Dropout*](https://arxiv.org/pdf/1506.02142.pdf) instead of Bayes by Backprop, and compared the results. We also did a preliminary investigation into using *Bayes by Backprop* in the active learning framework (see [`active_learning_exploration.ipynb`](https://github.com/samsarana/bayes-by-backprop/blob/master/code/active_learning_exploration.ipynb))
+
+This work was done by Sam Clarke, Jeffrey Mak and William Lee.
 
 ---
 ¹ The authors specified some hyperparameter values, but there were 180 combinations of remaining hyperparameters over which we needed to grid search. A single experiment took 15 hours on our GPU, so we only searched only a small fraction of the possible combinations.
